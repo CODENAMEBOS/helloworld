@@ -253,14 +253,7 @@ public class MainMenu {
 	    if (loggedInUser.equals(originalBoard.getBoardWriter())) {
 	        String choice;
 	        System.out.println("<제목을 수정하시겠습니까? (Y/N)>");
-	        while (true) {
-	            choice = sc.nextLine();
-	            if (choice.equalsIgnoreCase("Y") || choice.equalsIgnoreCase("N")) {
-	                break;
-	            } else {
-	                System.out.println("<Y 또는 N을 입력해주세요. (Y/N)>");
-	            }
-	        }
+	        choice = sc.nextLine(); // 수정
 	        if (choice.equalsIgnoreCase("Y")) {
 	            System.out.println("<제목을 입력하세요.>");
 	            String title = sc.nextLine();
@@ -268,14 +261,7 @@ public class MainMenu {
 	        }
 
 	        System.out.println("<내용을 수정하시겠습니까? (Y/N)>");
-	        while (true) {
-	            choice = sc.nextLine();
-	            if (choice.equalsIgnoreCase("Y") || choice.equalsIgnoreCase("N")) {
-	                break;
-	            } else {
-	                System.out.println("<Y 또는 N을 입력해주세요. (Y/N)>");
-	            }
-	        }
+	        choice = sc.nextLine(); // 수정
 	        if (choice.equalsIgnoreCase("Y")) {
 	            System.out.println("<내용을 입력하세요.>");
 	            String main = sc.nextLine();
